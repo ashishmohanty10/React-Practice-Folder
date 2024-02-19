@@ -1,7 +1,6 @@
 import React from "react";
-
-import HeroImg from "/heroimg.png";
-import Clock from "/clock.png";
+import HeroImg from "/heroimg.svg";
+import Clock from "/clock.svg";
 import Face from "/face.svg";
 
 const Hero = () => {
@@ -9,27 +8,26 @@ const Hero = () => {
     <div className="py-5">
       <div className="container">
         {/* first section */}
-        <div className="lg:grid grid-cols-12 py-5">
-          <div className="sm:col-span-8 lg:flex justify-between items-baseline">
-            <h1 className="lg:text-9xl font-medium text-5xl text-center lg:text-left ">
+        <div className="lg:grid grid-cols-12">
+          <div className="lg:col-span-8 lg:flex justify-between items-baseline">
+            <h1 className="md:text-9xl text-slate-900 font-medium text-6xl text-center lg:text-left mb-4 lg:mb-0">
               superb
             </h1>
-
-            <p className="lg:w-[30%] w-full text-center lg:text-left">
+            <p className="lg:w-[25%] w-full text-center lg:text-left">
               My new design agency that is definitly not a design subscription
               agency.
             </p>
           </div>
         </div>
 
-        {/* second div */}
-        <div className="lg:grid grid-cols-12 gap-5 m-5">
-          <div className="lg:col-span-8 rounded-3xl overflow-hidden mb-5 lg:mb-0">
-            <img src={HeroImg} alt="" className="w-full h-full " />
+        {/* second section */}
+        <div className="lg:grid grid-cols-12 py-2 gap-5">
+          <div className="lg:col-span-8 rounded-3xl overflow-hidden mb-6 lg:mb-0">
+            <img src={HeroImg} alt="" className="w-full h-full" />
           </div>
 
-          <div className="lg:col-span-4 flex flex-col gap-4">
-            <div className="h-1/2 bg-box1 rounded-3xl p-5 flex flex-col justify-between gap-10 mb-5 lg:mb-0">
+          <div className="lg:col-span-4 flex flex-col gap-5 ">
+            <div className="h-1/2 bg-box1 p-5 rounded-3xl flex flex-col justify-between">
               <img src={Clock} alt="" className="w-[40px]" />
 
               <p>
@@ -38,7 +36,7 @@ const Hero = () => {
               </p>
             </div>
 
-            <div className="h-1/2 bg-box2 rounded-3xl p-5 flex flex-col justify-between gap-10 mb-5 lg:mb-0">
+            <div className="h-1/2 bg-box2 p-5 rounded-3xl flex flex-col justify-between">
               <img src={Face} alt="" className="w-[40px]" />
 
               <p>

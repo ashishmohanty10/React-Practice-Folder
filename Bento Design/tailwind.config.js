@@ -2,11 +2,11 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    colors: {
-      box1: "#F7A072",
-      box2: "#B5E2FA",
-    },
     extend: {
+      colors: {
+        box1: "#F7A072",
+        box2: "#B5E2FA",
+      },
       container: {
         center: true,
         padding: {
